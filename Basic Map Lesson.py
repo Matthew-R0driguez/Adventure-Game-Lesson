@@ -6,15 +6,22 @@
 #moving up decreases the y location and
 #moving left decreases the x location and vice versa
 
-Map = [
-			[ 1, 1, 1, 1 ],
-			[ 1, 0, 1, 1 ],
-			[ 1, 0, 1, 1 ],
-			[ 1, 0, 0, 1 ],
-			[ 1, 0, 1, 1 ],
-			[ 1, 1, 1, 1 ]
-	]
 
+Map = [
+[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+[ 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1 ],
+[ 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1  ],
+[ 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1  ],
+[ 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1  ],
+[ 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1  ],
+[ 1, 1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1  ],
+[ 1, 1, "L", 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1  ],
+[ 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1  ],
+[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1  ]
+                                           ]
+print("you have woaken up in an abandond hospital")
+print("then you remember that you passed out whil looking for the cure to stop the outbreak.")
+print("It looks like the door needs a keycard i wonder where it is.")
 
 #Define a function to print our Map and current Player location
 
