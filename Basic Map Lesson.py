@@ -48,25 +48,34 @@ def movePlayer(x,y,moveDir):
     badMove = True
 
     #Now check if the move is valid - brute force method - better ways exist
-    if moveDir == "u":
+    if moveDir == "w":
         if Map[y-1][x] == 0:
             #print ("valid up move")
             return (x, y-1)
 
-    if moveDir == "d":
+    if moveDir == "s":
         if Map[y+1][x] == 0:
             #print ("valid down move")
             return (x, y+1)
 
-    if moveDir == "l":
+    if moveDir == "a":
         if Map[y][x-1] == 0:
             #print ("valid left move")
             return (x-1, y)
+        if Map[y][x-1] == "K":
+            if Keycard == True:
+                return (x-1, y)
 
-    if moveDir == "r":
+    if moveDir == "d":
         if Map[y][x+1] == 0:
             #print ("valid right move")
             return (x+1, y)
+        if Map[y][x+1] == "L":
+            if Keycard == True:
+                print ("you can now enter the lab!")
+                print ("Now lets grab the cure and leave.")
+                print ("find the second key card to leave!")
+                return (x+1, y)
         
     #they attempted a bad move
     if badMove:
