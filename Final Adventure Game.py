@@ -213,4 +213,4 @@ while True:
     pickupkey(currX, currY)
     currX, currY = movePlayer(currX, currY, moveDir)
     drawGrid(currX, currY, size, grid)
-   
+    drawMap(currX, currY)
